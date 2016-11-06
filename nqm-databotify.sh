@@ -15,7 +15,7 @@ mv ./bundle/programs/server/npm-rebuild-args.js ./bundle
 echo "running npm install"
 (cd bundle && npm install)
 echo "creating index.js"
-cat <<EOT >> index.js
+cat <<EOT >> ./bundle/index.js
 (function() {
   "use strict";
 
