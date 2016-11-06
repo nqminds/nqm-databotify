@@ -25,7 +25,21 @@ permission, and then run the script.
 
 ```
 cd /path/to/meteor/build
+curl https://raw.githubusercontent.com/nqminds/nqm-databotify/master/nqm-databotify.sh  > ./nqm-databotify.sh
 chmod +x ./nqm-databotify.sh
 ./nqm-databotify.sh
 ``` 
+
+## deployment
+The `nqm-databotify.sh` script will create a `databot.zip` in the current directory. This should be uploaded to
+the TDX as a zip file and then a databot created of type **zip package** referencing the uploaded zip resource.
+
+The **package parameters** specified when creating the databot will be passed to the meteor application as the 
+`METEOR_SETTINGS` environment variable.
+
+The url of the running meteor app is determined by the instance name used when starting the databot,
+for example, an instance name of **property inspector** will cause the databot to be hosted at 
+`https://property-inspector.my-tdx.com`
+
+
 
