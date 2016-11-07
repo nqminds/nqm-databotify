@@ -4,6 +4,12 @@ nqm databot package builder
 ## requirements
 This is linux only.
 
+It uses the `zip` command to produce the package, if you haven't already, you can install this using:
+
+```
+sudo apt-get install zip
+```
+
 First build the meteor application into a folder. Note that before building your app, be sure to run npm install
 in the application folder.
 
