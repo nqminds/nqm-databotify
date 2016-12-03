@@ -7,6 +7,9 @@ There are two shell scripts, choose the one that is applicable to your app:
 server component.  
 * nqm-databotify-server.sh - for use with full-blown meteor apps with their own server component exposing methods, publications etc
 
+Client-only meteor apps are the norm for nqm apps, and are much more efficient to build and deploy than full-blown meteor 
+apps. Always use this method unless your application has server-side code.
+
 ## requirements
 This is linux only.
 
