@@ -56,7 +56,7 @@ chmod +x ./nqm-databotify-server.sh
 ``` 
 
 ## deployment
-The `nqm-databotify.sh` script will create a `databot.zip` in the parent folder of your meteor app, e.g. `/path/to/your/meteor/databot.zip` in 
+The above scripts will create a `databot.zip` in the parent folder of your meteor app, e.g. `/path/to/your/meteor/databot.zip` in 
 the above examples. 
 This should be uploaded to the TDX as a zip file and then a databot created of type **zip package** referencing the uploaded zip resource.
 
