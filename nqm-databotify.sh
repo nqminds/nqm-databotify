@@ -41,7 +41,7 @@ cat <<EOT >> ../nqm-databotify-build/index.js
   function databot(input, output, context) {
 
     const app = express();
-    app.use("/", express.static(__dirname + "/client"));
+    app.use("/*", express.static(__dirname + "/client"));
 
     const databotServer = url.parse(context.databotHost);
     const parts = databotServer.hostname.split(".");
