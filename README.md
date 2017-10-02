@@ -20,7 +20,7 @@ sudo apt-get install zip
 ```
 
 ## client-only meteor apps
-Note that before building your app, be sure to run npm install in the application folder.
+Note that before building your app, be sure to run npm install in the application folder of your meteor app.
 
 Download the nqm-databotify.sh shell script and copy it to `/path/to/your/meteor/app`. Make sure the script has execute 
 permission, and then run the script.

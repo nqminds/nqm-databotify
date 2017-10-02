@@ -35,7 +35,7 @@ cat <<EOT >> ../nqm-databotify-build/index.js
   const fs = require("fs");
   const url = require("url");
   const util = require("util");
-  const input = require("nqm-databot-utils").input;
+  const input = require("@nqminds/nqm-databot-utils").input;
   const express = require("express");
 
   function databot(input, output, context) {
@@ -46,7 +46,7 @@ cat <<EOT >> ../nqm-databotify-build/index.js
         res.sendFile(__dirname + "/client/index.html");
     });
 
-    const databotServer = url.parse(context.databotHost);
+    const databotServer = url.parse(context.databotServer || context.databotHost);
     const parts = databotServer.hostname.split(".");
     const domain = parts.slice(parts.length-2).join(".");
 
@@ -66,7 +66,7 @@ rm ../nqm-databotify-build/package.json
 cat <<EOT >> ../nqm-databotify-build/package.json
 {
   "name": "nqm-databot-app",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "auto-generated databot package",
   "main": "index.js",
   "author": "databot@nqminds.com",

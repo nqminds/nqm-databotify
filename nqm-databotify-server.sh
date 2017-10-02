@@ -22,11 +22,11 @@ cat <<EOT >> ./bundle/index.js
 
   const url = require("url");
   const util = require("util");
-  const input = require("nqm-databot-utils").input;
+  const input = require("@nqminds/nqm-databot-utils").input;
 
   function databot(input, output, context) {
 
-    const databotServer = url.parse(context.databotHost);
+    const databotServer = url.parse(context.databotServer || context.databotHost);
     const parts = databotServer.hostname.split(".");
     const domain = parts.slice(parts.length-2).join(".");
     process.env.ROOT_URL = util.format("%s//%s.%s", databotServer.protocol, context.subDomain, domain);
