@@ -1,5 +1,5 @@
 # nqm-databotify
-Zips up all the files required for an an application that uses the accounts based apps system.
+Zips up all the files required for an application that uses the accounts based apps system.
 
 ## Installation
 You must have zip command line tool installed for this to work
